@@ -1,0 +1,104 @@
+<!-- Students: Our work lies in the js file. -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
+
+  <!-- Our CSS style sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <div id="background">
+    <div class="container">
+
+      <div id="startdiv">
+        <h1>Totally Trivial Trivia!</h1>
+        <button id="start">Start</button>
+      </div>
+
+      <div id="game">
+
+        <div id="display">
+          <span id="time"></span>
+        </div>
+
+        <div id="questions">
+          <h1>Totally Trivial Trivia!</h1>
+          <form>
+            1. Which is the largest planet in the solar system?
+            <br>
+            <input type="radio" name="q1" value="Jupiter"> Jupiter
+            <input type="radio" name="q1" value="Neptune">Neptune
+            <input type="radio" name="q1" value="Earth">Earth
+            <input type="radio" name="q1" value="Mars">Mars
+            <br> 2. How many Presnameents have there been of the USA?
+            <br>
+            <input type="radio" name="q2" value="43">43
+            <input type="radio" name="q2" value="44">44
+            <input type="radio" name="q2" value="45">45
+            <input type="radio" name="q2" value="46">46
+            <br> 3. What are a group of Dolphins called?
+            <br>
+            <input type="radio" name="q3" value="School">School
+            <input type="radio" name="q3" value="Herd">Herd
+            <input type="radio" name="q3" value="Pod">Pod
+            <input type="radio" name="q3" value="Pool">Pool
+            <br> 4. Who invented Penicillin?
+            <br>
+            <input type="radio" name="q4" value="AlexanderFleming">Alexandra Fleming
+            <input type="radio" name="q4" value="ThomasEdison">Thomas Edison
+            <input type="radio" name="q4" value="MarieCurie"> Marie Curie
+            <input type="radio" name="q4" value="GeorgeOrwell">George Orwell
+            <br> 5. How many men have walked on the moon?
+            <br>
+            <input type="radio" name="q5" value="10">10
+            <input type="radio" name="q5" value="5">5
+            <input type="radio" name="q5" value="12">12
+            <input type="radio" name="q5" value="9">9
+            <br> 6. What is the currency of Brazil?
+            <br>
+            <input type="radio" name="q6" value="Dollar">Dollar
+            <input type="radio" name="q6" value="The Bhat">The Bhat
+            <input type="radio" name="q6" value="Real">Real
+            <input type="radio" name="q6" value="Krona">Krona
+            <br>
+          </form>
+
+          <div id="submitdiv">
+            <button id="submit">Done</button>
+          </div>
+        </div>
+
+        <div id="results">
+          <img id="yay" src="assets/images/yay.jpg" alt="YAY">
+          <strong><p>Correct Answers:
+            <span id="correct"></span>
+          </p>
+          <p>Incorrect Answers:
+            <span id="incorrect"></span>
+          </p>
+          <p>Unanswered:
+            <span id="noanswer"></span>
+          </p></strong>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Script -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
